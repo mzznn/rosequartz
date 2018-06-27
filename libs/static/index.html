@@ -1,20 +1,46 @@
 <!DOCTYPE html(lang='en')>
 <html>
   <head>
-    <title>Blossom Boilerplate</title>
+    <title>Gegenwart</title>
     <meta charset="UTF-8"/>
     <meta name="description" content="Static boilerplate for Blossom UI"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
     <link rel="stylesheet" href="/assets/css/blossom.css"/>
+    <link rel="stylesheet" href="/assets/css/jquery.fatNav.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/assets/js/blossom.min.js"></script>
+    <script src="/assets/js/jquery.fatNav.js"></script>
   </head>
   <body>
-    <div class="centered">
-      <h4>It's working!</h4>
+    <div class="header row">
+      <div class="equal">
+        <h5 class="logo_float">Gegenwart</h5>
+      </div>
+      <div class="equal">
+        <nav class="fat-nav">
+          <div class="fat-nav__wrapper">
+            <ul>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-    <script src="/assets/js/blossom.min.js"></script>
+    <div class="row landing-ascend">
+      <div class="full">
+        <h4>Aus Frankfurt. Für Frankfurt. Und für international wie lokal tätige Kunden.</h4>
+        <p>Mit 15 Jahren Erfahrung und einem schlagkräftigen, spezialisierten Team entwickeln wir Strategien und setzen Design- und Kommunikations-Projekte in der Gegenwart um.</p>
+      </div>
+      <div class="full">
+        <div class="image-large"><img src="https://gegenwart.com/wp-content/uploads/2017/11/GGW_KGF_Vorschaubild_01-1.jpg"/></div>
+      </div>
+    </div>
+    <script>$.fatNav();</script>
   </body>
 </html>

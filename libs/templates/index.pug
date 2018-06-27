@@ -1,18 +1,32 @@
 doctype html(lang='en')
 html
-	head
-		title Blossom Boilerplate
-		meta(charset="UTF-8")
-		meta(name="description", content="Static boilerplate for Blossom UI")
-		meta(name="robots", content="index, follow")
-		meta(name="viewport", content="width=device-width, initial-scale=1")
-		link(rel="icon", type="image/png", href="/assets/images/favicon.png")
-		link(rel="stylesheet", href="/assets/css/blossom.css")
+	include head.pug
 
 	body
-		.centered
-			h4 It's working!
-			
-		script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
-		script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
-		script(src="/assets/js/blossom.min.js")
+		.header.row
+			.equal
+				h5.logo_float Gegenwart
+			.equal
+				nav.fat-nav
+					.fat-nav__wrapper
+						ul
+							li
+								a(href="#") Work
+							li
+								a(href="#") About
+							li
+								a(href="#") Team
+							li
+								a(href="#") Jobs
+
+		.row.landing-ascend
+			.full
+				h4 Aus Frankfurt. Für Frankfurt. Und für international wie lokal tätige Kunden.
+				p Mit 15 Jahren Erfahrung und einem schlagkräftigen, spezialisierten Team entwickeln wir Strategien und setzen Design- und Kommunikations-Projekte in der Gegenwart um.
+			.full
+				.image-large
+					img(src="https://gegenwart.com/wp-content/uploads/2017/11/GGW_KGF_Vorschaubild_01-1.jpg")
+		
+		
+		script.
+			$.fatNav();

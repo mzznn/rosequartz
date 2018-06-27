@@ -5423,3 +5423,14 @@ p code {
     transform: rotate(360deg);
   }
 }
+.header {
+  display: block;
+  height: 10vh;
+}
+.logo_float {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  margin-top: 20px;
+  z-index: 5;
+}
